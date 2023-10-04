@@ -1,17 +1,20 @@
-//
-//  CleanArchitectureApp.swift
-//  CleanArchitecture
-//
-//  Created by Mark Edmunds on 04/10/2023.
-//
-
 import SwiftUI
 
 @main
 struct CleanArchitectureApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  let userRepository: UserRepositoryProtocol
+  let authenticationService: AuthenticationService
+  let loginUseCase: LoginUseCaseProtocol
+  
+  init() {
+    self.userRepository = InMemoryUserRepository()
+    self.authenticationService = DefaultAuthenticationService(userRepository: userRepository)
+    self.loginUseCase = DefaultLoginUseCase(authenticationService: authenticationService)
+  }
+  
+  var body: some Scene {
+    WindowGroup {
+      LoginView(viewModel: LoginViewModel(loginUseCase: loginUseCase))
     }
+  }
 }

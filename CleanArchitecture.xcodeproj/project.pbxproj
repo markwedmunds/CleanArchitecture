@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8053F6CE2ACDDF310013F09A /* CleanArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6CD2ACDDF310013F09A /* CleanArchitectureApp.swift */; };
-		8053F6D02ACDDF310013F09A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6CF2ACDDF310013F09A /* ContentView.swift */; };
 		8053F6D22ACDDF320013F09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8053F6D12ACDDF320013F09A /* Assets.xcassets */; };
 		8053F6D52ACDDF320013F09A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8053F6D42ACDDF320013F09A /* Preview Assets.xcassets */; };
-		8053F6E02ACDDF320013F09A /* CleanArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6DF2ACDDF320013F09A /* CleanArchitectureTests.swift */; };
+		8053F6E02ACDDF320013F09A /* AuthenticationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6DF2ACDDF320013F09A /* AuthenticationServiceTests.swift */; };
 		8053F6EA2ACDDF320013F09A /* CleanArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6E92ACDDF320013F09A /* CleanArchitectureUITests.swift */; };
-		8053F6EC2ACDDF320013F09A /* CleanArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6EB2ACDDF320013F09A /* CleanArchitectureUITestsLaunchTests.swift */; };
+		8053F6FB2ACDDF760013F09A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6FA2ACDDF760013F09A /* User.swift */; };
+		8053F6FD2ACDDFA20013F09A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6FC2ACDDFA20013F09A /* AuthenticationService.swift */; };
+		8053F7002ACDDFD70013F09A /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F6FF2ACDDFD70013F09A /* UserRepository.swift */; };
+		8053F7042ACDE0360013F09A /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F7032ACDE0360013F09A /* LoginUseCase.swift */; };
+		8053F7072ACDE0A70013F09A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F7062ACDE0A70013F09A /* LoginViewModel.swift */; };
+		8053F7092ACDE0D10013F09A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F7082ACDE0D10013F09A /* LoginView.swift */; };
+		8053F70B2ACDE8C30013F09A /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053F70A2ACDE8C30013F09A /* LoginViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +41,20 @@
 /* Begin PBXFileReference section */
 		8053F6CA2ACDDF310013F09A /* CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8053F6CD2ACDDF310013F09A /* CleanArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureApp.swift; sourceTree = "<group>"; };
-		8053F6CF2ACDDF310013F09A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8053F6D12ACDDF320013F09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8053F6D42ACDDF320013F09A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8053F6D62ACDDF320013F09A /* CleanArchitecture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanArchitecture.entitlements; sourceTree = "<group>"; };
 		8053F6DB2ACDDF320013F09A /* CleanArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8053F6DF2ACDDF320013F09A /* CleanArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureTests.swift; sourceTree = "<group>"; };
+		8053F6DF2ACDDF320013F09A /* AuthenticationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceTests.swift; sourceTree = "<group>"; };
 		8053F6E52ACDDF320013F09A /* CleanArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8053F6E92ACDDF320013F09A /* CleanArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureUITests.swift; sourceTree = "<group>"; };
-		8053F6EB2ACDDF320013F09A /* CleanArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8053F6FA2ACDDF760013F09A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8053F6FC2ACDDFA20013F09A /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		8053F6FF2ACDDFD70013F09A /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8053F7032ACDE0360013F09A /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		8053F7062ACDE0A70013F09A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8053F7082ACDE0D10013F09A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8053F70A2ACDE8C30013F09A /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				8053F6CC2ACDDF310013F09A /* CleanArchitecture */,
-				8053F6DE2ACDDF320013F09A /* CleanArchitectureTests */,
-				8053F6E82ACDDF320013F09A /* CleanArchitectureUITests */,
 				8053F6CB2ACDDF310013F09A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,10 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				8053F6CD2ACDDF310013F09A /* CleanArchitectureApp.swift */,
-				8053F6CF2ACDDF310013F09A /* ContentView.swift */,
+				8053F6F92ACDDF5D0013F09A /* Authentication */,
+				8053F6D32ACDDF320013F09A /* Preview Content */,
 				8053F6D12ACDDF320013F09A /* Assets.xcassets */,
 				8053F6D62ACDDF320013F09A /* CleanArchitecture.entitlements */,
-				8053F6D32ACDDF320013F09A /* Preview Content */,
 			);
 			path = CleanArchitecture;
 			sourceTree = "<group>";
@@ -112,21 +120,92 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8053F6DE2ACDDF320013F09A /* CleanArchitectureTests */ = {
+		8053F6F82ACDDF510013F09A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				8053F6DF2ACDDF320013F09A /* CleanArchitectureTests.swift */,
+				80D6D80C2ACDED5400DF5F6C /* Services */,
+				80D6D80D2ACDED6100DF5F6C /* Models */,
 			);
-			path = CleanArchitectureTests;
+			path = Domain;
 			sourceTree = "<group>";
 		};
-		8053F6E82ACDDF320013F09A /* CleanArchitectureUITests */ = {
+		8053F6F92ACDDF5D0013F09A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8053F6FE2ACDDFC20013F09A /* Infrastructure */,
+				8053F6F82ACDDF510013F09A /* Domain */,
+				8053F7022ACDE0250013F09A /* Application */,
+				8053F7052ACDE0920013F09A /* Presentation */,
+				8053F70C2ACDEBB30013F09A /* Tests */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8053F6FE2ACDDFC20013F09A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				8053F6FF2ACDDFD70013F09A /* UserRepository.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		8053F7022ACDE0250013F09A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8053F7032ACDE0360013F09A /* LoginUseCase.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8053F7052ACDE0920013F09A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8053F7062ACDE0A70013F09A /* LoginViewModel.swift */,
+				8053F7082ACDE0D10013F09A /* LoginView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8053F70C2ACDEBB30013F09A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				80D6D80B2ACDEC7000DF5F6C /* UI */,
+				80D6D8082ACDEC5700DF5F6C /* Unit */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		80D6D8082ACDEC5700DF5F6C /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				8053F70A2ACDE8C30013F09A /* LoginViewModelTests.swift */,
+				8053F6DF2ACDDF320013F09A /* AuthenticationServiceTests.swift */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		80D6D80B2ACDEC7000DF5F6C /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				8053F6E92ACDDF320013F09A /* CleanArchitectureUITests.swift */,
-				8053F6EB2ACDDF320013F09A /* CleanArchitectureUITestsLaunchTests.swift */,
 			);
-			path = CleanArchitectureUITests;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		80D6D80C2ACDED5400DF5F6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8053F6FC2ACDDFA20013F09A /* AuthenticationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		80D6D80D2ACDED6100DF5F6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8053F6FA2ACDDF760013F09A /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8053F6D02ACDDF310013F09A /* ContentView.swift in Sources */,
 				8053F6CE2ACDDF310013F09A /* CleanArchitectureApp.swift in Sources */,
+				8053F6FB2ACDDF760013F09A /* User.swift in Sources */,
+				8053F7002ACDDFD70013F09A /* UserRepository.swift in Sources */,
+				8053F6FD2ACDDFA20013F09A /* AuthenticationService.swift in Sources */,
+				8053F7042ACDE0360013F09A /* LoginUseCase.swift in Sources */,
+				8053F7092ACDE0D10013F09A /* LoginView.swift in Sources */,
+				8053F7072ACDE0A70013F09A /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8053F6E02ACDDF320013F09A /* CleanArchitectureTests.swift in Sources */,
+				8053F70B2ACDE8C30013F09A /* LoginViewModelTests.swift in Sources */,
+				8053F6E02ACDDF320013F09A /* AuthenticationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8053F6EA2ACDDF320013F09A /* CleanArchitectureUITests.swift in Sources */,
-				8053F6EC2ACDDF320013F09A /* CleanArchitectureUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
