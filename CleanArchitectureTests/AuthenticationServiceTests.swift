@@ -3,7 +3,7 @@ import XCTest
 
 class MockAuthenticationService: AuthenticationService {
   var shouldAuthenticate = false
-  
+
   func authenticate(username: String, password: String) -> Bool {
     return shouldAuthenticate
   }
@@ -12,13 +12,13 @@ class MockAuthenticationService: AuthenticationService {
 final class AuthenticationServiceTests: XCTestCase {
   var userRepository: UserRepositoryProtocol!
   var authenticationService: AuthenticationService!
-  
+
   override func setUp() {
     super.setUp()
     userRepository = InMemoryUserRepository()
     authenticationService = DefaultAuthenticationService(userRepository: userRepository)
   }
-  
+
   func testValidAuthentication() async throws {
     do {
       _ = try await authenticationService.authenticate(username: "demo", password: "password")
@@ -27,7 +27,7 @@ final class AuthenticationServiceTests: XCTestCase {
       XCTFail("Expected successful authentication but error was thrown: \(error)")
     }
   }
-  
+
   func testInvalidAuthentication() async throws {
     do {
       _ = try await authenticationService.authenticate(username: "demo", password: "wrongPassword")
@@ -36,7 +36,7 @@ final class AuthenticationServiceTests: XCTestCase {
       XCTAssertEqual(error, AuthenticationError.incorrectPassword)
     }
   }
-  
+
   func testNonexistentUser() async throws {
     do {
       _ = try await authenticationService.authenticate(username: "nonexistent", password: "password")
